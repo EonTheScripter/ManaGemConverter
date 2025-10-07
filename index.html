@@ -121,7 +121,7 @@
             padding: calc(var(--spacing-unit) * 0.4);
             width: 80px;
             background-color: var(--table-header-bg);
-            border: 1px solid #000000; /* Black 1px border */
+            border: 1px solid #000000;
             border-radius: var(--image-border-radius);
             font-size: calc(var(--font-size-base) * 0.9);
             color: var(--text-color);
@@ -151,7 +151,7 @@
             padding: calc(var(--spacing-unit) * 0.6) calc(var(--spacing-unit) * 2);
             background-color: var(--table-header-bg);
             color: var(--text-color);
-            border: 1px solid #000000; /* Black 1px border */
+            border: 1px solid #000000;
             border-radius: var(--image-border-radius);
             cursor: pointer;
             font-size: calc(var(--font-size-base) * 0.9);
@@ -225,6 +225,23 @@
             font-weight: bold;
         }
 
+        .credit {
+            margin-top: calc(var(--spacing-unit) * 2);
+            font-size: calc(var(--font-size-base) * 0.8);
+            text-align: center;
+            color: var(--text-color);
+        }
+
+        .credit a {
+            color: var(--item-text-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .credit a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             .container {
                 width: auto;
@@ -245,6 +262,10 @@
             .input-section .label,
             .input-section .input-cell {
                 font-size: calc(var(--font-size-base) * 0.8);
+            }
+
+            .credit {
+                font-size: calc(var(--font-size-base) * 0.7);
             }
         }
 
@@ -273,6 +294,10 @@
             .header-image {
                 width: 32px;
                 height: 32px;
+            }
+
+            .credit {
+                font-size: calc(var(--font-size-base) * 0.6);
             }
         }
     </style>
@@ -308,6 +333,10 @@
                 <tr><td id="yellow-amount">0</td><td><span class="yellow"><strong>Sunsworn Mana Gems</strong></span></td></tr>
                 <tr><td id="red-amount">0</td><td><span class="red"><strong>Demonic Mana Gems</strong></span></td></tr>
             </table>
+        </div>
+        <div class="credit">
+            <center>Credit</center>
+            Made with the help of <strong><a href="https://docs.google.com/spreadsheets/d/19uE5GxAkuudU34UIGQGhNFV_BMKMR4G5S_jmwroVnZ0/edit?pli=1&gid=1285337717#gid=1285337717" target="_blank">ResTTe</a></strong>'s Magic Level spreadsheet.
         </div>
     </div>
 
